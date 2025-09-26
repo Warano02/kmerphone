@@ -11,11 +11,17 @@
   background: linear-gradient(90deg, #f0f0f0 0% 0%, #f0f0f0 100% 100%);
   clip-path: polygon(18% 0, 0 100%, 100% 100%);
 }
-.div-4{
-        background: linear-gradient(90deg, #f0f0f0 0% 0%, #f0f0f0 100% 100%);
-    clip-path: polygon(82% 100%, 0 0, 100% 0);
+.div-4 {
+  background: linear-gradient(90deg, #f0f0f0 0% 0%, #f0f0f0 100% 100%);
+  clip-path: polygon(82% 100%, 0 0, 100% 0);
 }
-.c{
-    background: linear-gradient(90deg, #f0f0f0 0% 0%, #f0f0f0 100% 100%);
-    margin-top: -15px;
+.c {
+  background: linear-gradient(90deg, #f0f0f0 0% 0%, #f0f0f0 100% 100%);
+  margin-top: -15px;
+}
+
+/** component/Home/Faq.tsx */
+.d {
+  background: linear-gradient(180deg, #ffffff 70% 0%, #efefef 100% 100%);
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
 }
