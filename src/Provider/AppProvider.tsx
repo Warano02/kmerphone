@@ -1,9 +1,10 @@
 import { AppContext } from "@/context/AppContext"
-import type { ReactNode } from "react"
+import { useState, type ReactNode } from "react"
 
 export const AppProvider = ({ children }: { children: ReactNode }) => {
     const AppName = "Kmerphone"
-    const value = { AppName }
+    const [isSearching, setIsSearching] = useState(false);
+    const value = { AppName, isSearching, setIsSearching }
     return (
         <AppContext.Provider value={value}>
             {children}
