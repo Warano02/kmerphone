@@ -7,9 +7,8 @@ function AppLayout() {
     return (
         <>
             <Header />
-       <div className="mt-[40px] ">
              <Outlet />
-       </div>
+
             <WorkflowDelivery />
             <Footer />
         </>

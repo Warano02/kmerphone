@@ -90,6 +90,7 @@ function Header() {
 
                     </div>
                 </div>
+
                 <Link to="/" className="hidden sm:block">
                     <img src={Logo} alt="Website Logo" />
                 </Link>
@@ -135,7 +136,7 @@ function Header() {
 
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className="hidden sm:flex items-center gap-4 ">
                     <button className="cursor-pointer p-2  hover:bg-gray-200 transition rounded-full" onClick={() => setIsSearching(prev => !prev)}>
                         <svg width="20" height="20" viewBox="0 0 16 16" fill="none" className="font-extrabold" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.836 10.615 15 14.695" stroke="#7A7B7D" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />

@@ -1,0 +1,26 @@
+[
+    {
+        "name":"Samsung",
+        "img":"https://kmerphone.com/cdn/shop/collections/Samsung_2ee0e6f2-f5c9-4093-ab45-e95faa83eb7b.jpg?v=1612648254&width=380"
+    },
+    {
+        "name":"Xiomi",
+        "img":"https://kmerphone.com/cdn/shop/collections/Sans_titre_-_2020-07-10T085715.350_1.jpg?v=1612648685&width=380"
+    },
+    {
+        "name":"Tecno",
+        "img":"https://kmerphone.com/cdn/shop/collections/Sans_titre_-_2021-01-21T001119.553_1.jpg?v=1612648524&width=380"
+    },
+    {
+        "name":"Infinix",
+        "img":"https://kmerphone.com/cdn/shop/collections/Sans_titre_-_2021-01-24T194152.846_1.jpg?v=1612648047&width=380"
+    },
+    {
+        "name":"Zte",
+        "img":"https://kmerphone.com/cdn/shop/collections/Smartphones_ZTE_Prix_Cameroun.png?v=1758030853&width=380"
+    },
+    {
+        "name":"Autre marques",
+        "img":"https://kmerphone.com/cdn/shop/collections/Alcatel.jpg?v=1648116875&width=380"
+    }
+]
