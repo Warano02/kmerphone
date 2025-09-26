@@ -1,9 +1,13 @@
+import { RouterProvider } from "react-router"
+import { AppProvider } from "./Provider/AppProvider"
+import { routes } from "./router/router"
+
 function App() {
- 
+
   return (
-    <>
-   App TSX
-    </>
+    <AppProvider>
+      <RouterProvider router={routes} />
+    </AppProvider>
   )
 }
 
