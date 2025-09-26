@@ -1,0 +1,42 @@
+[
+    {
+        "id": "_ddo55d",
+        "images": [
+            "https://kmerphone.com/cdn/shop/files/Xiaomi-Redmi-14C-Pochette-Glasse-Violet.jpg?v=1748985907&width=280",
+            "https://kmerphone.com/cdn/shop/files/Xiaomi-Redmi-14C-Pochette-Glasse-Vert.jpg?v=1748985907&width=280"
+        ],
+        "price": 63.500,
+        "n_price": 128.400,
+        "desc": "Xiaomi Redmi 14C - 256GB ROM - 8+8GB -2SIM - 50+2++2MP + Pochette + Glasse Offert"
+    },
+    {
+        "id": "_ddodd5d",
+        "images": [
+            "https://kmerphone.com/cdn/shop/files/Xiaomi-Redmi-14C-Pochette-Glasse-Noir_2.jpg?v=1748985907&width=280",
+            "https://kmerphone.com/cdn/shop/files/Xiaomi-Redmi-14C-Pochette-Glasse-Violet.jpg?v=1748985907&width=280"
+        ],
+        "price": 54.500,
+        "n_price": 108.400,
+        "desc": "Xiaomi Redmi 14C - 256GB ROM - 4+4GB -2SIM - 50+2++2MP + Pochette + Glasse Offert"
+    },
+    {
+        "id": "_ddo55dff",
+        "images": [
+            "https://kmerphone.com/cdn/shop/files/Samsung-Galaxy-A05-Noir.jpg?v=1757253930&width=280",
+            "https://kmerphone.com/cdn/shop/files/Samsung-Galaxy-A05-Blanc.jpg?v=1757253930&width=280"
+        ],
+        "price": 48.500,
+        "n_price": 99.600,
+        "desc": "Samsung Galaxy A05 - 64GB ROM - 4GB RAM - 2SIM - 50+2MP - 5000mAh - Garantie 24 Mois"
+    },
+    {
+        "id": "_ddjjso55d",
+        "images": [
+            "https://kmerphone.com/cdn/shop/files/Tecno-Spark-40-Gris.jpg?v=1757200657&width=280",
+            "https://kmerphone.com/cdn/shop/files/Tecno-Spark-40-Noir.jpg?v=1757200657&width=280"
+        ],
+        "price": 66.990,
+        "n_price": 118.700,
+        "desc": "Tecno Spark 40 - 128GB ROM - 4+4GB RAM - 2SIM - 50+2MP - 5200mAh - Garantie 13 Mois"
+    }
+]

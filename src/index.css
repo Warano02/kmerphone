@@ -1,9 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
-@theme{
-    --font-monserat: "Montserrat", sans-serif;
-    --font-roboto: "Roboto", sans-serif;
-    --color-primary:#00855F; 
-    --color-secondary:#52504E; 
+@theme {
+  --font-monserat: "Montserrat", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --color-primary: #00855f;
+  --color-secondary: #52504e;
+}
+.div-3 {
+  background: linear-gradient(90deg, #f0f0f0 0% 0%, #f0f0f0 100% 100%);
+  clip-path: polygon(18% 0, 0 100%, 100% 100%);
+}
+.div-4{
+        background: linear-gradient(90deg, #f0f0f0 0% 0%, #f0f0f0 100% 100%);
+    clip-path: polygon(82% 100%, 0 0, 100% 0);
+}
+.c{
+    background: linear-gradient(90deg, #f0f0f0 0% 0%, #f0f0f0 100% 100%);
+    margin-top: -15px;
 }
