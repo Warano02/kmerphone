@@ -1,5 +1,13 @@
 [
     {
-        "brand":"Xiaomi"
+        "id":"_iidjdnnd,",
+        "brand": "Xiaomi",
+        "desc":"Samsung Galaxy A05 - 64GB ROM - 4GB RAM - 2SIM - 50+2MP - 5000mAh - Garantie 24 Mois",
+        "images": [
+            "https://kmerphone.com/cdn/shop/files/Samsung-Galaxy-A05-Blanc.jpg?v=1757253930&width=360",
+            "https://kmerphone.com/cdn/shop/files/Samsung-Galaxy-A05-Noir.jpg?v=1757253930&width=360"
+        ],
+        "normalPrice": 99600,
+        "price": 48500
     }
 ]

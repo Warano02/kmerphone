@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
+import Whatsapp from "@/components/Whatsapp"
 import WorkflowDelivery from "@/components/WorkflowDelivery"
 import { useEffect, useState } from "react"
 import { Outlet, useLocation } from "react-router"
@@ -19,6 +20,8 @@ function AppLayout() {
 
             <WorkflowDelivery />
             <Footer />
+            <Whatsapp />
+
         </>
     )
 }
