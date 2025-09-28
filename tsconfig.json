@@ -1,6 +1,7 @@
 {
   "files": [],
   "compilerOptions": {
+    "baseUrl": ".",
     "types": [
       "node"
     ],
@@ -9,7 +10,6 @@
     "target": "ESNext",
     "jsx": "react-jsx"
   },
-  "baseUrl": ".",
   "paths": {
     "@/*": [
       "src/*"
