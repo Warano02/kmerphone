@@ -1,0 +1,91 @@
+{
+    "id": "_iidjdnnd",
+    "brand": "Xiaomi",
+    "desc": "Samsung Galaxy A05 - 64GB ROM - 4GB RAM - 2SIM - 50+2MP - 5000mAh - Garantie 24 Mois",
+    "variants": [
+        {
+            "color": "Blanc",
+            "exa": "#fff",
+            "image": "https://kmerphone.com/cdn/shop/files/Samsung-Galaxy-A05-Blanc.jpg?v=1757253930&width=360"
+        },
+        {
+            "color": "Noir",
+            "exa": "#000",
+            "image": "https://kmerphone.com/cdn/shop/files/Samsung-Galaxy-A05-Noir.jpg?v=1757253930&width=360"
+        }
+    ],
+    "description": [
+        {
+            "title": "Samsung Galaxy A05 offre des performances époustoufantes à un prix imbattable.",
+            "desc": "Ce smartphone est votre compagnon idéal pour une expérience mobile immersive. Avec son écran de 6,7 pouces, profitez d'une qualité visuelle exceptionnelle pour vos contenus préférés, que ce soit pour des jeux, des vidéos, ou simplement naviguer sur internet.",
+            "img": "https://images.samsung.com/is/image/samsung/p6pim/my/feature/164801172/my-feature-see-it-all--see-it-clear-538283440?$FB_TYPE_A_JPG$"
+        },
+        {
+            "title":"Expérience fluide pour accompagner toutes",
+            "desc":"Avec 64 Go de mémoire interne et 4 Go de RAM, ce téléphone garantit une fluidité hors pair lors de l'utilisation d'applications exigeantes en ressources, vous permettant de passer aisément d'une tâche à une autre sans aucun ralentissement!",
+            "img":"https://images.samsung.com/is/image/samsung/p6pim/my/feature/164801171/my-feature-keep-on-the-fun-538283436"
+        },
+        {
+            "title":"Explorez chaque petit détail et conservez vos souvenirs les plus précieux.",
+            "desc":"Le Galaxy A05 a une caméra avant de 8 MP et sa caméra arrière de 50 MP vous permettent de capturer des instants mémorables avec une netteté étonnante et des détails spectaculaires.",
+            "img":"https://images.samsung.com/is/image/samsung/p6pim/my/feature/164801175/my-feature-dual-camera--double-the-fun-538283448?$FB_TYPE_A_JPG$"
+        },
+        {
+            "title":"Double SIM, Double Avantage",
+            "desc":"Grâce à sa double nano SIM, vous pouvez séparer vos vies professionnelle et personnelle tout en restant connecté partout où vous allez."
+        },
+        {
+            "title":"Endurance inégalée pour réaliser vos projets avec succès",
+            "desc":"La batterie longue durée de 5000 mAh vous assure une utilisation prolongée sans avoir à vous soucier constamment de recharger votre téléphone.",
+            "img":"https://images.samsung.com/is/image/samsung/p6pim/my/feature/164801180/my-feature-power-that-keeps-you-going-538283458?$FB_TYPE_A_JPG$"
+        },
+        {
+            "title":"Réalisez vos désirs avec assurance",
+            "desc":"Profitez de 24 mois de garantie sur la qualité et la durabilité du Galaxy A05 pour une tranquillité d'esprit absolue !"
+        },
+        {
+            "title":"Expérimentez le frisson des économies en ligne chez Kmerphone",
+            "desc":"En choisissant le Samsung Galaxy A05 - un smartphone alliant performance, qualité photo et autonomie pour une expérience exceptionnelle, à un prix imbattable. Faites-vous livrer à votre domicile dès maintenant!"
+        }
+    ],
+    "caract":[
+ {
+    "label":"Marque",
+    "value":"Samsung"
+ },
+ {
+    "label":"Model",
+    "value":"Galaxy A05"
+ },
+ {
+    "label":"ROM",
+    "value":"64 Go"
+ },
+ {
+    "label":"RAM",
+    "value":"4 Go"
+ },
+ {
+    "label":"Carte SIM",
+    "value":"2 SIM Carte"
+ },
+ {
+    "label":"Taille D'écran",
+    "value":"6.7"
+ },
+ {
+    "label":"Résoulution écran",
+    "value":"720 x 1600 pixels"
+ },
+ {
+    "label":"Taille D'écran",
+    "value":"6.7"
+ },
+ {
+    "label":"Taille D'écran",
+    "value":"6.7"
+ }
+    ],
+    "normalPrice": 99600,
+    "price": 48500
+}

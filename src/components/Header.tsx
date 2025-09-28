@@ -14,13 +14,13 @@ function Header() {
         { label: "Accceuil", link: "/" },
         {
             label: "Nos Produits", children: [
-                { label: "Smartphones", link: "/collection" },
-                { label: "Samsung", link: "/collection/samsung" },
-                { label: "Xiaomi", link: "/collection/xiamo" },
-                { label: "Tecno", link: "/collection/tecno" },
-                { label: "Infinix", link: "/collection/infinix" },
+                { label: "Smartphones", link: "/collections" },
+                { label: "Samsung", link: "/collections/samsung" },
+                { label: "Xiaomi", link: "/collections/xiamo" },
+                { label: "Tecno", link: "/collections/tecno" },
+                { label: "Infinix", link: "/collections/infinix" },
                 { label: "ZTE", link: "/collection/zte" },
-                { label: "Autre produits", link: "/collection" },
+                { label: "Autre produits", link: "/collections" },
             ]
         },
         { label: "Blog", link: "/blog" },
