@@ -1,8 +1,16 @@
 import { Link } from "react-router"
 import Phone from "../common/Phone"
-
+import mockPhone from "@/data/phones.json"
+import { useEffect, useState } from "react"
+import type { SinglePhone } from "@/types"
 function ProductsCollection({ m }: { m: string }) {
+    const [phone, setPhone] = useState<SinglePhone | null>(null)
 
+    useEffect(() => {
+        if (!phone) {
+            setPhone(mockPhone[0])
+        }
+    }, [phone])
     return (
         <div className="lg:px-10">
             <div className="flex flex-wrap justify-start items-center space-x-2 text-sm text-gray-500 font-medium  border-b-[0.02px] border-[#5c59598a] mb-2">
@@ -26,7 +34,7 @@ function ProductsCollection({ m }: { m: string }) {
             </div>
             <h1 className="font-bold font-monostreat text-xl">{m.toLocaleUpperCase()} </h1>
             <div>
-                <Phone />
+                {phone && <Phone phone={phone} />}
             </div>
         </div>
     )
