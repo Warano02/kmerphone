@@ -5,7 +5,8 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     const AppName = "Kmerphone"
     const utilsLinks={
         whatsapp:"https://wa.me/237621092130",
-        email:"carineteoi@gmail.com"
+        email:"carineteoi@gmail.com",
+        phone:"621 09 21 30"
     }
     const [isSearching, setIsSearching] = useState(false);
     const value = { AppName, isSearching, setIsSearching,utilsLinks }

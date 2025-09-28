@@ -4,6 +4,7 @@ import Home from "../Pages/Home";
 import Collections from "@/Pages/Collections";
 import About from "@/Pages/About";
 import Faq from "@/Pages/Faq";
+import NotFound from "@/Pages/NotFound";
 
 export const routes = createBrowserRouter([
     {
@@ -26,5 +27,9 @@ export const routes = createBrowserRouter([
                 element: <Faq />
             }
         ]
+    },
+    {
+        path:"*",
+        element:<NotFound/>
     }
 ])

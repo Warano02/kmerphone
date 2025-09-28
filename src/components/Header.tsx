@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router";
 import { useAppContext } from "@/hooks/useAppContext";
 import { Plus, TextAlignJustify, UserRound, X } from "lucide-react";
 function Header() {
-    const { setIsSearching } = useAppContext()
+    const { setIsSearching ,utilsLinks} = useAppContext()
     const [open, setOpen] = useState(false);
     const location = useLocation();
     const [isHome, setIsHome] = useState(false);
@@ -45,7 +45,7 @@ function Header() {
     return (
         <header className="w-full fixed top-0 z-2">
             <div className="w-full bg-primary text-center text-white p-2 text-[1em] font-monserat font-bold">
-                Douala/Yaoundé : 621092130
+                Douala/Yaoundé : {utilsLinks.phone}
             </div>
             <nav className={`flex items-center justify-between px-6  py-4  ${isHome? (scrolled ? "bg-white":"bg-transparent"):"bg-white"} relative transition-all`}>
                 <div className="sm:hidden flex justify-between items-center pb-4 gap-4">
