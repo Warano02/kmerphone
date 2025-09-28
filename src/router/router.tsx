@@ -3,6 +3,7 @@ import AppLayout from "../Layout/AppLayout";
 import Home from "../Pages/Home";
 import Collections from "@/Pages/Collections";
 import About from "@/Pages/About";
+import Faq from "@/Pages/Faq";
 
 export const routes = createBrowserRouter([
     {
@@ -19,6 +20,10 @@ export const routes = createBrowserRouter([
             {
                 path: "/about",
                 element: <About />
+            },
+            {
+                path: "/faq",
+                element: <Faq />
             }
         ]
     }
