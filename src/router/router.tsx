@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import AppLayout from "../Layout/AppLayout";
 import Home from "../Pages/Home";
 import Collections from "@/Pages/Collections";
+import About from "@/Pages/About";
 
 export const routes = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ export const routes = createBrowserRouter([
             {
                 path: "/collections/:m?",
                 element: <Collections />
+            },
+            {
+                path: "/about",
+                element: <About />
             }
         ]
     }

@@ -4,15 +4,17 @@ import mockPhone from "@/data/phones.json"
 import { useEffect, useState } from "react"
 import type { SinglePhone } from "@/types"
 function ProductsCollection({ m }: { m: string }) {
-    const [phone, setPhone] = useState<SinglePhone | null>(null)
+    const [phones, setPhones] = useState<SinglePhone[] | null>(null)
 
     useEffect(() => {
-        if (!phone) {
-            setPhone(mockPhone[0])
+        if (!phones) {
+            const test=Array.from({length:30},()=>mockPhone[0])
+            setPhones(test)
         }
-    }, [phone])
+    }, [phones])
+
     return (
-        <div className="lg:px-10">
+        <div className="lg:px-14">
             <div className="flex flex-wrap justify-start items-center space-x-2 text-sm text-gray-500 font-medium  border-b-[0.02px] border-[#5c59598a] mb-2">
                 <button type="button" aria-label="Home">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,9 +34,14 @@ function ProductsCollection({ m }: { m: string }) {
                 </svg>
                 <Link to={"#"} className="text-primary">{m} </Link>
             </div>
-            <h1 className="font-bold font-monostreat text-xl">{m.toLocaleUpperCase()} </h1>
-            <div>
-                {phone && <Phone phone={phone} />}
+            <h1 className="font-medium font-roboto text-[24px] text-  my-4">{m.toLocaleUpperCase()} </h1>
+            <select name="" id=""></select>
+            <div className="w-full sm:px-12 mt-4 flex flex-wrap gap-4 sm:grid grid-cols-4">
+                { 
+                    phones && phones.map((phone,i)=>(
+                        <Phone phone={phone} key={i}/>
+                    ))
+                }
             </div>
         </div>
     )

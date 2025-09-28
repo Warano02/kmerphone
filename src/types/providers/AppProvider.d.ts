@@ -1,5 +1,6 @@
 type UtilsLinks = {
   whatsapp: string;
+  email: string;
 };
 export interface AppContextProps {
   AppName: string;
