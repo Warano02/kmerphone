@@ -7,6 +7,7 @@ import Faq from "@/Pages/Faq";
 import NotFound from "@/Pages/NotFound";
 import Contact from "@/Pages/Contact";
 import Products from "@/Pages/Products";
+import AdminLayout from "@/Layout/AdminLayout";
 
 export const routes = createBrowserRouter([
     {
@@ -36,6 +37,13 @@ export const routes = createBrowserRouter([
                 path: "/faq",
                 element: <Faq />
             }
+        ]
+    },
+    {
+        path: "/d",
+        element: <AdminLayout />,
+        children: [
+
         ]
     },
     {
