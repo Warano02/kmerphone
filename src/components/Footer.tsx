@@ -15,7 +15,7 @@ function Footer() {
         },
         {
             title: "Besoin d'aide?",
-            links: [{ label: "FAQ", target: "/faq" }, { label: "Contactez Nous", target: "/contactus" },]
+            links: [{ label: "FAQ", target: "/faq" }, { label: "Contactez Nous", target: "/contact" },]
         },
        
     ];
