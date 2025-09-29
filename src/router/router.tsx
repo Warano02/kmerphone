@@ -8,6 +8,7 @@ import NotFound from "@/Pages/NotFound";
 import Contact from "@/Pages/Contact";
 import Products from "@/Pages/Products";
 import AdminLayout from "@/Layout/AdminLayout";
+import Cart from "@/Pages/Cart";
 
 export const routes = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ export const routes = createBrowserRouter([
             {
                 path: "/products/:id?",
                 element: <Products />
+            },
+            {
+                path: "/cart",
+                element: <Cart />
             },
             {
                 path: "/contact",

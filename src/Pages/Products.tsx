@@ -26,7 +26,7 @@ function Products() {
 
     const handleClick = () => {
         if (!phone) return
-        addToCart({ qte, id: phone.id, color })
+        addToCart({ qte, id: phone.id, color,desc:phone.desc,price:phone.price,normalPrice:phone.normalPrice,img:images[0] })
         navigate('/cart')
     }
 

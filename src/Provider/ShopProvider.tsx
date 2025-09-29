@@ -9,24 +9,20 @@ export const ShopProvider = ({ children }: { children: ReactNode }) => {
         console.log(cart)
     }, [cart])
 
-    const addToCart = ({ id, color, qte }: SingleCommand) => {
-        if (!cart.length) return setCart([{ id, color, qte }])
+    const addToCart = ({ id, color, qte, price, normalPrice, desc, img }: SingleCommand) => {
+        if (!cart.length) return setCart([{ id, color, qte, price, normalPrice, desc, img }])
         const exist = cart.some((el) => el.id === id)
         if (exist) {
-            const newCart = cart.map((el) => {
+            return setCart((prev) => prev.map((el) => {
                 return el.id === id ? { ...el, color, qte } : el
-            })
-            return setCart(newCart)
-            alert("produit modifié avec succès")
+            }))
         }
-        return setCart((prev) => { return [...prev, { id, color, qte }] })
+        return setCart((prev) => { return [...prev, { id, color, qte, price, normalPrice, desc, img }] })
     }
-    const deleteFromCart = (id: string) => {
-        const newCart = cart.filter((el) => el.id != id)
-        setCart(newCart)
-    }
+    const deleteFromCart = (id: string) => setCart((cart) => cart.filter((el) => el.id != id))
 
-    const value = { cart, setCart, addToCart,deleteFromCart }
+
+    const value = { cart, setCart, addToCart, deleteFromCart }
 
     return (
         <ShopContext.Provider value={value}>

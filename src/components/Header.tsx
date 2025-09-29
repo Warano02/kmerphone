@@ -3,7 +3,9 @@ import Logo from "@/assets/Logo-KMERPHONE_190x.png"
 import { Link, useLocation } from "react-router";
 import { useAppContext } from "@/hooks/useAppContext";
 import { Plus, TextAlignJustify, UserRound, X } from "lucide-react";
+import { useShopContext } from "@/hooks/useShopContext";
 function Header() {
+    const {cart}=useShopContext()
     const { setIsSearching ,utilsLinks} = useAppContext()
     const [open, setOpen] = useState(false);
     const location = useLocation();
@@ -84,7 +86,7 @@ function Header() {
                                 />
                             </svg>
 
-                            <button className={`absolute -top-3 -right-3 text-xs text-white w-[18px] h-[18px] rounded-full bg-[#d60d0d] `}>3</button>
+                            <button className={`absolute -top-3 -right-3 text-xs text-white w-[18px] h-[18px] rounded-full bg-[#d60d0d] `}>{cart?.length} </button>
                         </Link>
 
 
@@ -164,7 +166,7 @@ function Header() {
                             />
                         </svg>
 
-                        <button className={`absolute -top-3 -right-3 text-xs text-white w-[18px] h-[18px] rounded-full bg-[#d60d0d] `}>3</button>
+                        <button className={`absolute -top-3 -right-3 text-xs text-white w-[18px] h-[18px] rounded-full bg-[#d60d0d] `}>{cart?.length} </button>
                     </Link>
 
 
