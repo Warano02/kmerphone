@@ -4,6 +4,7 @@ import { Link } from "react-router"
 import mockPhone from "@/data/product.json"
 import type { SingleProduct } from "@/types/pages/Product"
 import { Minus, Plus } from "lucide-react"
+import Recomandations from "@/components/products/Recomandations"
 
 function Products() {
     const [phone, setPhone] = useState<SingleProduct | null>(null)
@@ -121,7 +122,7 @@ function Products() {
                         <h1 className="font-bold my-2 text-2xl">{"toutes les carractéristiques:".toLocaleUpperCase()} </h1>
                         <ul>
                             {
-                                phone?.caract.map((c,i)=>(
+                                phone?.caract.map((c, i) => (
                                     <li key={i}><span>{c.label}: </span> {c.value} </li>
                                 ))
                             }
@@ -131,6 +132,7 @@ function Products() {
                 </div>
 
             </div>
+            <Recomandations />
         </div>
     )
 }
