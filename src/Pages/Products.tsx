@@ -1,12 +1,16 @@
 
 import { useEffect, useState } from "react"
-import { Link } from "react-router"
+import { Link, useNavigate } from "react-router"
 import mockPhone from "@/data/product.json"
 import type { SingleProduct } from "@/types/pages/Product"
 import { Minus, Plus } from "lucide-react"
 import Recomandations from "@/components/products/Recomandations"
+import CarrouselImage from "@/components/products/CarrouselImage"
+import { useShopContext } from "@/hooks/useShopContext"
 
 function Products() {
+    const { addToCart } = useShopContext()
+    const navigate = useNavigate()
     const [phone, setPhone] = useState<SingleProduct | null>(null)
     const [color, setColor] = useState("")
     const [qte, setQte] = useState(1)
@@ -19,8 +23,11 @@ function Products() {
             setImages(() => mockPhone.variants.map((el) => el.image))
         }
     }, [phone])
-    const handleClick = () => {
 
+    const handleClick = () => {
+        if (!phone) return
+        addToCart({ qte, id: phone.id, color })
+        navigate('/cart')
     }
 
     return (
@@ -37,8 +44,8 @@ function Products() {
                 <Link to={"#"}>{phone?.desc} </Link>
             </div>
             <div className="sm:flex gap-2 w-full">
-                <div className="w-full px-2 sm:w-1/2 h-full bg-red-500">
-
+                <div className="w-full px-2 sm:w-1/2 h-full">
+                    <CarrouselImage images={images} currentImage={currentImage} setCurrentImage={setCurrentImage} />
                 </div>
                 <div className="w-full px-2 sm:w-1/2 flex flex-col gap-3 ">
                     <h1 className="text-2xl font-bold text-black">{phone?.desc} </h1>
