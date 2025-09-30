@@ -12,6 +12,8 @@ import Cart from "@/Pages/Cart";
 import Account from "@/Pages/Account";
 import Login from "@/Pages/Login";
 import SignUp from "@/Pages/SignUp";
+import CollectonsManager from "@/Pages/admin/CollectonsManager";
+import ProductsManager from "@/Pages/admin/ProductsManager";
 
 export const routes = createBrowserRouter([
     {
@@ -46,16 +48,16 @@ export const routes = createBrowserRouter([
                 element: <Faq />
             },
             {
-                path:"/account",
-               element:<Account/>,  
+                path: "/account",
+                element: <Account />,
             },
             {
-                path:"/account/login",
-                element:<Login/>
+                path: "/account/login",
+                element: <Login />
             },
             {
-                path:"/account/register",
-                element:<SignUp/>
+                path: "/account/register",
+                element: <SignUp />
             }
         ]
     },
@@ -63,7 +65,14 @@ export const routes = createBrowserRouter([
         path: "/d",
         element: <AdminLayout />,
         children: [
-
+            {
+                path:"/d/collections",
+                element: <CollectonsManager />
+            },
+            {
+                path:"/d/products",
+                element: <ProductsManager />
+            },
         ]
     },
     {

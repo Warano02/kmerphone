@@ -11,7 +11,7 @@ function BestSeller() {
         <div className="flex flex-wrap gap-2 sm:justify-center">
           {
             bestSellers.map((product, idx) => (
-              <div key={idx} className="relative rounded  w-[312px] h-[512px] flex flex-col overflow-hidden border-[0.2px] border-secondary bg-white ">
+              <div key={idx} className="relative rounded  w-[312px] h-[512px] flex flex-col overflow-hidden border-[0.2px] border-[#64636344] bg-white ">
                 <div className="group w-full h-[312px]   cursor-pointer">
                   <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                     <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center ">

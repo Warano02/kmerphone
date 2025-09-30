@@ -4,7 +4,7 @@ import img1 from "@/assets/img/kmerphone-01.webp"
 import img2 from "@/assets/img/kmerphone_2.webp"
 import { Link } from "react-router"
 function Hero() {
-    const [page, setPage] = useState(2)
+    const [page, setPage] = useState(1)
     return (
         <section className="w-full h-screen bg-black relative">
             {page === 1 ? <Frist /> : <Second />}
