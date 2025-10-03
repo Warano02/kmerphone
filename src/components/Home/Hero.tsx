@@ -22,10 +22,10 @@ function Hero() {
 }
 const Frist = () => {
     return (
-        <div className="w-full h-full relative">
+        <div className="w-full h-full relative flex justify-between items-center">
             <img src={img1} alt="" className="w-full h-full object-center sm:object-cover" />
-            <div className="absolute top-1/2 right-56 flex flex-col gap-2">
-                <h1 className="text-2xl lg:text-4xl font-monserat text-secondary font-bold">Nouveautés</h1>
+            <div className="absolute right-20 top-1/2 sm:right-56 flex flex-col gap-2">
+                <h1 className="text-center text-2xl lg:text-4xl font-monserat text-secondary font-bold">Nouveautés</h1>
                 <div className=" w-55 py-4  bg-secondary text-white m-4">
                     <p className="text-center w-full  font-monserat">Smartphone meilleur qualité</p>
                 </div>
@@ -37,12 +37,13 @@ const Frist = () => {
         </div>
     )
 }
+
 const Second = () => {
     return (
         <div className="w-full h-full relative">
-            <img src={img2} alt="" className="w-full h-full object-cover" />
-            <div className="absolute top-1/2 left-56 flex flex-col gap-2">
-                <h1 className="text-2xl lg:text-4xl font-monserat text-secondary font-bold">Promotions</h1>
+            <img src={img2} alt="" className="w-full h-full object-center sm:object-cover" />
+            <div className="absolute top-1/2 left-20 sm:left-56 flex flex-col gap-2">
+                <h1 className="text-2xl lg:text-4xl font-monserat text-secondary font-bold text-center">Promotions</h1>
                 <div className=" w-55 py-4  bg-secondary text-white m-4">
                     <p className="text-center w-full  font-monserat">Meilleur prix smartphone</p>
                 </div>

@@ -8,7 +8,7 @@ function BestSeller() {
       <div className="div-3 w-full h-28"></div>
       <div className="w-full c ">
         <Title text="Meilleurs ventes" />
-        <div className="flex flex-wrap gap-2 sm:justify-center">
+        <div className="flex px-6 sm:px-0+4 flex-wrap gap-2 sm:justify-center">
           {
             bestSellers.map((product, idx) => (
               <div key={idx} className="relative rounded  w-[312px] h-[512px] flex flex-col overflow-hidden border-[0.2px] border-[#64636344] bg-white ">
