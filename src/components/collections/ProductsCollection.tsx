@@ -36,7 +36,7 @@ function ProductsCollection({ m }: { m: string }) {
             </div>
             <h1 className="font-medium font-roboto text-[24px] text-  my-4">{m.toLocaleUpperCase()} </h1>
             <select name="" id=""></select>
-            <div className="w-full sm:px-12 mt-4 flex flex-wrap gap-4 sm:grid grid-cols-4">
+            <div className="w-full sm:px-12 mt-4 flex flex-wrap justify-center gap-4 sm:grid grid-cols-4">
                 { 
                     phones && phones.map((phone,i)=>(
                         <Phone phone={phone} key={i}/>
