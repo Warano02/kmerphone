@@ -29,7 +29,7 @@ const Frist = () => {
                 <div className=" w-55 py-4  bg-secondary text-white m-4">
                     <p className="text-center w-full  font-monserat">Smartphone meilleur qualité</p>
                 </div>
-                <Link to={"/collection"} className="group hover:text-white hover:border-none relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md border border-secondary px-6 font-medium text-secondary">
+                <Link to={"/collections"} className="group hover:text-white hover:border-none relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md border border-secondary px-6 font-medium text-secondary">
                     <span className="absolute h-0 w-0  bg-secondary transition-all duration-300 group-hover:h-full group-hover:w-full"></span>
                     <span className="relative"> En savoir plus</span>
                 </Link>
@@ -47,7 +47,7 @@ const Second = () => {
                 <div className=" w-55 py-4  bg-secondary text-white m-4">
                     <p className="text-center w-full  font-monserat">Meilleur prix smartphone</p>
                 </div>
-                <Link to={"/collection"} className="group hover:text-white hover:border-none relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md border border-secondary px-6 font-medium text-secondary">
+                <Link to={"/collections"} className="group hover:text-white hover:border-none relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md border border-secondary px-6 font-medium text-secondary">
                     <span className="absolute h-0 w-0  bg-secondary transition-all duration-300 group-hover:h-full group-hover:w-full"></span>
                     <span className="relative"> En savoir plus</span>
                 </Link>

@@ -39,9 +39,9 @@ function Faq() {
                                 <h1 className="text-center font-bold">{el.q.toLocaleUpperCase()} </h1>
                             </div>
                             {
-                                open === i && <div className="w-full text-[18px]  text-secondary font-monserat px-8">
-                                    <p className="text-center">{el.r} </p>
-                                    {el.li && <ul className="w-full flex flex-col justify-center items-center text-center list-disc">
+                                open === i && <div className="w-full text-[18px]  text-secondary font-monserat sm:px-8">
+                                    <p className="sm:text-center">{el.r} </p>
+                                    {el.li && <ul className="w-full flex flex-col justify-center items-center sm:text-center list-disc">
                                         {
                                             el.li.map((e, i) => (
                                                 <li key={i} className="">{e} </li>
