@@ -2,8 +2,8 @@ import type { ProductCollectionProps } from "@/types"
 import { Link } from "react-router"
 function Phone({ phone }: ProductCollectionProps) {
     return (
-        <Link to={`/products/${phone.id}`} className="relative rounded  w-[249px] h-[357px] flex flex-col overflow-hidden  bg-white flex-shink-0 ">
-            <div className="group w-full h-[289px]   cursor-pointer">
+        <Link to={`/products/${phone.id}`} className="relative rounded flex-shink-0 min-w-[249px] h-[357px] flex flex-col overflow-hidden  bg-white flex-shink-0 ">
+            <div className="group  w-full h-[289px]   cursor-pointer">
                 <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                     <div className="absolute w-full h-full [backface-visibility:hidden] flex items-center justify-center ">
                         <img src={phone.images[0]} className="w-full h-full object-cover" alt="" />

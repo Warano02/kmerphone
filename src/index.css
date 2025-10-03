@@ -7,6 +7,13 @@
   --color-primary: #00855f;
   --color-secondary: #52504e;
 }
+.hide-scrollbar{
+   -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
 .div-3 {
   background: linear-gradient(90deg, #f0f0f0 0% 0%, #f0f0f0 100% 100%);
   clip-path: polygon(18% 0, 0 100%, 100% 100%);

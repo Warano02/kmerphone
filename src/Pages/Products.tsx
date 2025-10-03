@@ -90,7 +90,7 @@ function Products() {
                         <div className="flex gap-1">
                             {
                                 phone?.variants?.map((v, i) => (
-                                    <button key={i} className={`w-8 h-8 bg-[${v.exa}] cursor-pointer border-[0.2px] border-[#97979742]`} onClick={() => {
+                                    <button key={i}  style={{ backgroundColor: v.exa }}  className={`w-8 h-8 bg-[${v.exa}] cursor-pointer border-[0.2px] border-[#97979742]`} onClick={() => {
                                         setCurrentImage(i)
                                         setColor(v.color)
                                     }}>
