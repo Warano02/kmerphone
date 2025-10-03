@@ -48,14 +48,14 @@ function Products() {
                     <CarrouselImage images={images} currentImage={currentImage} setCurrentImage={setCurrentImage} />
                 </div>
                 <div className="w-full px-2 sm:w-1/2 flex flex-col gap-3 ">
-                    <h1 className="text-2xl font-bold text-black">{phone?.desc} </h1>
+                    <h1 className="text-xl sm:text-2xl font-bold text-black">{phone?.desc} </h1>
                     <div className="flex w-full gap-1">
                         <div>
                             <span className="text-2xl text-[#CA0000] font-bold">{phone?.price} FCFA </span>
                             <span className="line-through font-bold text-[17px] ">{phone?.normalPrice} FCFA </span>
                         </div>
                         <span className="w-0.5 h-4 bg-[#7e7e7e81] mt-2"></span>
-                        {phone && <span className="p-1 bg-primary text-white font-semibold rounded">Economisez {Math.round(phone.normalPrice - phone.price)} FCFA</span>}
+                        {phone && <span className="p-1 bg-primary text-white font-semibold rounded text-center sm:text-start">Economisez {Math.round(phone.normalPrice - phone.price)} FCFA</span>}
                     </div>
                     <div className=" border-t border-b border-t-[#7e7e7e81] border-b-[#7e7e7e81] flex flex-col gap-2 font-semibold">
                         <div className="flex gap-2">
@@ -94,16 +94,15 @@ function Products() {
                                         setCurrentImage(i)
                                         setColor(v.color)
                                     }}>
-
                                     </button>
                                 ))
                             }
                         </div>
                     </div>
-                    <div className="w-1/2 flex justify-between gap-2">
+                    <div className="w-full sm:w-1/2 flex items-center justify-between gap-2">
                         <span>Quantité</span>
 
-                        <div className="flex w-[130px] h-[60px] justify-between items-center border border-[#97979742] rounded">
+                        <div className="flex w-[150px]  sm:w-[130px] h-[60px] justify-between items-center border border-[#97979742] rounded">
                             <button className="h-full cursor-pointer" onClick={() => setQte((prev) => prev > 1 ? prev - 1 : 1)}><Minus /> </button>
                             <span>{qte} </span>
                             <button className="h-full cursor-pointer" onClick={() => setQte((prev) => prev + 1)}><Plus /> </button>
@@ -116,7 +115,7 @@ function Products() {
                         {
                             phone?.description.map((desc, i) => (
                                 <>
-                                    <h1 className="text-2xl font-bold font-monserat" key={i}>{desc.title} </h1>
+                                    <h1 className="text-xl sm:text-2xl font-bold font-monserat" key={i}>{desc.title} </h1>
                                     <p>{desc.desc} </p>
                                     {desc.img && (
                                         <img src={desc.img} alt="product image" />

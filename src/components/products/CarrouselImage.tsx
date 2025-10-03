@@ -10,10 +10,10 @@ function CarrouselImage({ images, currentImage, setCurrentImage }: Props) {
     return (
 
         <div className="flex flex-col items-center space-y-4">
-            <div className="w-full max-w-3xl relative">
-                <div className="w-full h-32 absolute bottom-1/2  flex justify-between items-center">
-                    <button className="h-full w-28 cursor-pointer flex items-center justify-center pr-4" onClick={() => setCurrentImage((prev) => prev > 0 ? prev - 1 : prev)}><ChevronLeft className="h-full w-[50px]" /> </button>
-                    <button className="h-full w-28 cursor-pointer flex items-center justify-center pl-4" onClick={() => setCurrentImage((prev) => prev < images.length - 1 ? prev + 1 : prev)}><ChevronRight className="h-full w-[50px]" /></button>
+            <div className="w-full sm:max-w-3xl relative">
+                <div className="w-full h-32 absolute top-1/2 -translate-y-1/2 sm:top-0 sm:translate-y-0  sm:bottom-1/2  flex justify-between items-center">
+                    <button className="h-full w-28 cursor-pointer flex items-center justify-center -ml-8 sm:pr-4" onClick={() => setCurrentImage((prev) => prev > 0 ? prev - 1 : prev)}><ChevronLeft className="h-full w-[50px]" /> </button>
+                    <button className="h-full w-28 cursor-pointer flex items-center justify-center -mr-8 sm:pl-4" onClick={() => setCurrentImage((prev) => prev < images.length - 1 ? prev + 1 : prev)}><ChevronRight className="h-full w-[50px]" /></button>
                 </div>
                 <img src={images[currentImage]} className="w-full rounded-lg " alt="Main Image" />
             </div>
